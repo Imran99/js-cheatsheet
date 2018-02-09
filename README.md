@@ -41,6 +41,7 @@ let repeating = ‘abc’.repeat(10);
 let anInt     = parseInt(someString);
 let aFloat    = parseFloat(someString);
 let reversed  = s.split('').reverse().join('');
+let lines     = input.split('\n');
 ```
 
 ## Map
