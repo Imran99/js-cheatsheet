@@ -134,8 +134,9 @@ class Rectangle {
 
 ## Math
 ```javascript
-lat abs = Math.abs(num);
-let int = Math.trunc(num);
+lat abs     = Math.abs(num);
+let int     = Math.trunc(num);
+let rounded = num.toFixed(2);
 ```
 
 ## Mocha, Chai
