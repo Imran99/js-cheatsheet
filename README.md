@@ -17,10 +17,9 @@ let zeroInitialised = new Array(5).fill(0);
 
 ### common operations
 ```javascript
-let sum         = myArray.reduce((a, b) => a + b);
-let includes    = myArray.includes(‘cat’)
-let mapped      = myArray.map((element, index) => element++)
-let sum         = myArray.reduce((accumulator, current) => accumulator + current, initialVal)
+let includes    = myArray.includes(‘cat’);
+let mapped      = myArray.map((element, index) => element++);
+let sum         = myArray.reduce((sum, current) => sum + current);
 let ascending   = ints.sort((a, b) => a - b);
 let filtered    = arrayWithNulls.filter(e => e !== null);
 ```
