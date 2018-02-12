@@ -138,6 +138,13 @@ let int     = Math.trunc(num);
 let str     = num.toFixed(2);
 ```
 
+## Console
+```javascript
+console.log(`multiline template
+literal string
+${someVar}`)
+```
+
 ## Mocha, Chai
 
 ```javascript
