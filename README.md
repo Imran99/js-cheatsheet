@@ -148,6 +148,8 @@ ${someVar}`)
 ## Mocha, Chai
 
 ```javascript
+const should = require('chai').should();
+
 describe(‘Some feature’, () => {
     it(‘should meet expectations’, () => {
       [1,2,3].should.deep.equal([1, 2, 3]);
