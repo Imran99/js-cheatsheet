@@ -13,6 +13,7 @@ let obj     = new SomeObject();
 ## Array
 ```javascript
 let zeroInitialised = new Array(5).fill(0);
+let 2DInitialised   = new Array(n).fill(0).map( x => new Array(n).fill(1) );
 ```
 
 ### common operations
