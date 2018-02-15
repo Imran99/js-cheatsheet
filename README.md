@@ -157,6 +157,31 @@ describe(‘Some feature’, () => {
 });
 ```
 
+## Request
+
+```bash
+npm i -S request
+npm i -S request-promise
+```
+
+```javascript
+const request = require('request-promise');
+
+request({
+  uri: 'https://swapi.co/api/planets',
+  json: true
+}).then(r => {
+    let planets = r.results
+      .map(p => p.name)
+      .reduce( (str, p) => str += `, ${p}`);
+    console.log(planets);
+  })
+  .catch(e=>{
+    console.log(e);
+  });
+```
+
 ## References
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
 * https://github.com/mbeaudru/modern-js-cheatsheet#tdz_sample
+* https://www.npmjs.com/package/request-promise
