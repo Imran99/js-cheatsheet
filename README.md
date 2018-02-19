@@ -145,18 +145,24 @@ let str = num.toFixed(2);
 
 ## Date
 ```javascript
-console.log(date); //Tue Feb 03 1987 12:34:56 GMT+0000 (UTC)
-console.log(date.getDate()); //3
-console.log(date.getDay()); //2
-console.log(date.getFullYear()); //1987
-console.log(date.getHours()); //12
-console.log(date.getMilliseconds()); //789
-console.log(date.getMinutes()); //34
+let date = new Date();
+
+console.log(date); //Tue Feb 20 2018 09:50:47 GMT+1100 (AEDT)
+console.log(date.toUTCString()) //Mon, 19 Feb 2018 22:50:47 GMT
+console.log(new Date(date.getTime())); //Tue Feb 20 2018 09:50:47 GMT+1100 (AEDT)
+console.log(new Date('12/01/1980')); //Mon Dec 01 1980 00:00:00 GMT+1100 (AEDT)
+console.log(Date.parse('12/01/1980')); //Mon Dec 01 1980 00:00:00 GMT+1100 (AEDT)
+console.log(date.getDate()); //20
+console.log(date.getDay()); //2 (0-6)
+console.log(date.getUTCDay()); //1
+console.log(date.getFullYear()); //2018
+console.log(date.getHours()); //9
+console.log(date.getMilliseconds()); //536
+console.log(date.getMinutes()); //50
 console.log(date.getMonth()); //1
-console.log(date.getSeconds()); //56
-console.log(date.getTime()); //539354096789
-console.log(date.getYear()); //87
-console.log(date.toDateString()); //Tue Feb 03 1987
+console.log(date.getSeconds()); //47
+console.log(date.getTime()); //1519080647536
+console.log(date.toDateString()); //Tue Feb 20 2018
 ```
 
 ## Console
