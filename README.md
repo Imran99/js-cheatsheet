@@ -56,6 +56,8 @@ let map = new Map([
 map.has(key)
 let val = map.get(key)
 map.set(key, val)
+
+let size = map.size;
 ```
 
 ## Set
@@ -66,6 +68,8 @@ let set = new Set([1, 2, 3]);
 let size = mySet.size;
 set.add(item);
 set.has(item);
+
+let size = set.size;
 ```
 
 ## for ... of
