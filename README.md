@@ -143,6 +143,22 @@ let int = Math.trunc(num);
 let str = num.toFixed(2);
 ```
 
+## Date
+```javascript
+console.log(date); //Tue Feb 03 1987 12:34:56 GMT+0000 (UTC)
+console.log(date.getDate()); //3
+console.log(date.getDay()); //2
+console.log(date.getFullYear()); //1987
+console.log(date.getHours()); //12
+console.log(date.getMilliseconds()); //789
+console.log(date.getMinutes()); //34
+console.log(date.getMonth()); //1
+console.log(date.getSeconds()); //56
+console.log(date.getTime()); //539354096789
+console.log(date.getYear()); //87
+console.log(date.toDateString()); //Tue Feb 03 1987
+```
+
 ## Console
 ```javascript
 console.log(`multiline template
