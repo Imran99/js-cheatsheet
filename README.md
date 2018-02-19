@@ -138,9 +138,9 @@ class Rectangle {
 
 ## Math
 ```javascript
-lat abs     = Math.abs(num);
-let int     = Math.trunc(num);
-let str     = num.toFixed(2);
+let abs = Math.abs(num);
+let int = Math.trunc(num);
+let str = num.toFixed(2);
 ```
 
 ## Console
