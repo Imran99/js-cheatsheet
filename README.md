@@ -146,6 +146,17 @@ literal string
 ${someVar}`)
 ```
 
+## Promise
+```javascript
+let p = new Promise( (resolve, reject) => {
+  if(something) {
+    resolve(data);
+  } else {
+    reject(new Error('some error'));
+  }
+});
+```
+
 ## Mocha, Chai
 
 ```javascript
