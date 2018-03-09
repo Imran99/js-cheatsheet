@@ -163,6 +163,7 @@ console.log(date.getMonth()); //1
 console.log(date.getSeconds()); //47
 console.log(date.getTime()); //1519080647536
 console.log(date.toDateString()); //Tue Feb 20 2018
+console.log(date.toISOString()); //2018-02-19T22:50:47.536Z
 ```
 
 ## Console
